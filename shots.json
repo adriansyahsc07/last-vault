@@ -1,0 +1,1 @@
+{"shots":[{"file":"1-cover.png","name":"play","url":"http://localhost:8080/?shot=play"},{"file":"2-start.png","name":"start","url":"http://localhost:8080/?shot=start"},{"file":"3-alarm.jpg","name":"alarm","url":"http://localhost:8080/?shot=alarm"},{"file":"4-win.png","name":"win","url":"http://localhost:8080/?shot=win"}]}
