@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Last Vault — a quiet heist in the Meridian Museum</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070d14;
+    color: #e8e2d0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  canvas {
+    display: block;
+    width: min(960px, 96vw);
+    height: auto;
+    background: #0d1622;
+    border: 2px solid #c9a227;
+    border-radius: 6px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  }
+  p {
+    margin: 0;
+    max-width: 960px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #9fb0c0;
+    text-align: center;
+  }
+  p b { color: #e8e2d0; }
+  kbd {
+    background: #1d2f45;
+    border: 1px solid #3a5570;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-family: inherit;
+    color: #f2c14e;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="700"></canvas>
+<p>
+  <b>The Last Vault</b> — cross the gallery, pocket the gold, the jewels and the vault itself,
+  then slip out the service exit. Move with <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys.
+  Hold <kbd>E</kbd> at the vault to crack it. <kbd>J</kbd> jams the cameras. Click to toss a coin and
+  pull a guard away. Red cones and camera sweeps raise the alarm — at 100%, you are caught.
+</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
